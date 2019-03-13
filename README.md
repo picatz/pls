@@ -47,12 +47,6 @@ $ pls | sed -n '1!p' | wc -l
 ```
 
 ```console
-# get number of processes
-$ pls | sed -n '1!p' | wc -l
-117
-```
-
-```console
 # find process ids that match "fluentd"
 $ pls | grep 'fluentd' |  awk '{print $1}'
 1939
